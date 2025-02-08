@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 2px solid #000;
+    background-color: #fff;
+}
+ /* 原有样式保持不变 */
+
+.controls {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    touch-action: manipulation; /* 防止手机端误触 */
+}
+
+button:active {
+    background-color: #45a049;
+}
+
+/* 手机竖屏时调整布局 */
+@media (max-width: 480px) {
+    .controls {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #downBtn {
+        grid-column: span 2; /* 加速下落按钮占两列 */
+    }
+}
