@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>俄罗斯方块</h1>
+    <canvas id="tetris" width="300" height="600"></canvas>
+    
+    <!-- 操作按钮 -->
+    <div class="controls">
+        <button id="leftBtn">← 左</button>
+        <button id="rightBtn">→ 右</button>
+        <button id="rotateBtn">↻ 旋转</button>
+        <button id="downBtn">↓ 加速下落</button>
+    </div>
+
+    <audio id="clearSound" src="clear.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
